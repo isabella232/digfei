@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<title>Minimal Portfolio Template for Agency, Photography and Resume - Revive</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/icons.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/responsive.css" />
+	<link rel="stylesheet" type="text/css" href="css/color.css" />
+
+</head>
+<body ng-app="digitalfei">
+	<div class="theme-layout" ng-controller="indexCtrl">
+		<header class="stick">
+			<div class="container">
+				<div class="logo"><a href="#" title=""><h1 class="cd-headline clip is-full-width" style="width: 400px; font-weight: bold;">DIGITAL FEI</h1></a></div>
+				<nav>
+					<ul>
+						<li><a href="/" title="">Home</a></li>
+						<li><a href="/about" title="">About</a></li>
+						<li class="boldnav"><a href="/instantquote" title="">Instant Quote</a></li>
+						<li><a href="#" title="">Services</a>
+							<ul>
+								<li><a href="/development" title="">Development</a></li>
+								<li><a href="/management" title="">Management</a></li>
+							</ul>
+						</li>
+						<li><a href="/contact" title="">Contact</a></li>
+					</ul>
+					<div class="other-links hidden">
+						<a class="search-btn" href="#" title=""><i class="fa fa-search"></i></a>
+						<a class="menu-btn" href="#" title=""><i class="fa fa-bars"></i></a>
+					</div>
+
+				</nav>
+			</div>
+
+			<div class="revive-search">
+				<div class="container">
+					<a class="close-search" href="#" title=""><i class="fa fa-remove"></i></a>
+					<form>
+						<input type="text" placeholder="Enter Your Search" />
+						<button><i class="fa fa-search"></i></button>
+					</form>
+				</div>
+			</div><!-- Revice Search -->
+
+			<div class="sidemenu">
+				<div class="sidemenu-top">
+					<div class="logo"><a href="#" title=""><img src="images/logo.png" alt="" /></a></div>
+					<a class="close-menu" href="#" title=""><i class="fa fa-remove"></i></a>
+				</div>
+				<ul>
+					<li><a href="/" title="">Home</a></li>
+					<li><a href="/about" title="">About</a></li>
+					<li><a href="/instantquote" title="">Instant Quote</a></li>
+					<li><a href="/development" title="">Development</a></li>
+					<li><a href="/management" title="">Management</a></li>
+					<li><a href="/contact" title="">Contact</a></li>
+				</ul>
+
+				<div class="socials">
+					<a href="#" title=""><i class="fa fa-facebook"></i></a>
+					<a href="#" title=""><i class="fa fa-twitter"></i></a>
+					<a href="#" title=""><i class="fa fa-linkedin"></i></a>
+					<a href="#" title=""><i class="fa fa-google-plus"></i></a>
+				</div>
+			</div>
+
+		</header><!-- Header -->
+
+		<div class="menu-height"></div>
+
+		<div class="pagetop">
+			<div class="container">
+				<h1>Instant Quote <span>Generator</span></h1>
+				<ul class="breadcrumbs">
+					<li><a href="/" title="">Home</a></li>
+					<li>Instant Quote Generator</li>
+				</ul>
+			</div>
+		</div><!-- Page Top -->
+
+
+		<section>
+			<div class="block">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8">
+							<div class="blog-detail">
+
+                                
+                                <form>
+                                
+                                    <div class="row">
+                                        <div class="col-xs-6"><h3 style="text-align:left">Basic Pages:<i ng-mouseenter="basicshow=true" ng-mouseleave="basicshow=false" class="fa fa-question-circle"></i> </h3></div><div class="col-xs-6"><input ng-model="basicpages" type="number"></div>
+                                        <div class="col-xs-12" ng-show="basicshow" style="height:80px;text-align:left;margin-left:10px;">Basic pages are web pages that have zero interaction with the user. Example:About Us, Services Description Page, and Home Page</div>
+                                        <div class="col-xs-6"><h3 style="text-align:left">Form Submission Pages:<i ng-mouseenter="submissionshow=true" ng-mouseleave="submissionshow=false" class="fa fa-question-circle"></i> </h3></div><div class="col-xs-6"><input ng-model="formpages" type="number"></div>
+                                        <div class="col-xs-12" ng-show="submissionshow" style="height:80px;text-align:left;margin-left:10px;">Form Submission Pages are web pages that users fill out and is emailed to you. Example: Contact Us, Product request Form, and Service Quote</div>
+                                        <div class="col-xs-6"><h3 style="text-align:left">Special Pages:<i ng-mouseenter="specialshow=true" ng-mouseleave="specialshow=false" class="fa fa-question-circle"></i> </h3></div><div class="col-xs-6"><input ng-model="custompages" type="number"></div>
+                                        <div class="col-xs-12" ng-show="specialshow" style="height:80px;text-align:left;margin-left:10px;">Special Pages are web pages that the users interact with  and rely on a database, real time calculations, interact with other web pages, or any complicated task. Example: Price calculator, Checkout Cart, and Real Estate Search.</div>
+                                     	
+                                     	<div class="col-xs-12" style="    padding-top: 40px;text-align: left;padding-bottom: 40px;">
+	                                        <div class="col-xs-6" >
+	                                        	<input type="checkbox" style="height:20px;width:20px;" /><div class="indent"> Search Engine Optimization <span class="moneyspan">+$50</span></div>
+	                                        </div>
+	                                        <div class="col-xs-6" >
+												<input type="checkbox" style="height:20px;width:20px;" /><div class="indent"> Real Estate MLS IDX Setup <span class="moneyspan">+$250 and $25 monthly</span></div>
+	                                        </div>
+	                                        <div class="col-xs-6" >
+	                                        	<input type="checkbox"  style="height:20px;width:20px;"/><div class="indent"> Secure Sockets Layer <span class="moneyspan">+$200</span></div>
+	                                        </div>
+	                                        <div class="col-xs-6" >
+	                                        	<input type="checkbox"  style="height:20px;width:20px;"/><div class="indent"> Custom Vector Logo (5 Concepts / 5 Revisions / 5 File Formats)  <span class="moneyspan">+$500</span></div>
+	                                        </div>
+                                        </div>
+                                        <div class="col-xs-6"><h3 style="text-align:left">Hosting Plan:</h3></div><div class="col-xs-6" style="text-align:left"><h3><span ng-show="plan==0">BASIC</span><span ng-show="plan==1">POPULAR</span><span ng-show="plan==2">PREMIUM</span></h3></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-4">
+    									    <div class="tableplan" ng-class="{'activetable': plan==0}" ng-click="switchplan(0)">
+        										<div class="tableheader">BASIC</div>
+        										<ul class="tableplanul">
+        										<li class="tablemoney" ng-class="{'activeli': plan==0}">$60<span>MONTH</span></li>
+        										<li>1 hour of updates monthly</li>
+        										<li>Each Additional Hour $60</li>
+        										<li>4 business day turn around</li>
+        										<li>Free Backups (up to 10GB)</li>
+        										</ul>
+    										</div>
+    									</div>
+    									<div class="col-sm-4">
+    									    <div class="tableplan" ng-class="{'activetable': plan==1}" ng-click="switchplan(1)">
+        										<div class="tableheader">PRO</div>
+        										<ul class="tableplanul">
+        										<li class="tablemoney" ng-class="{'activeli': plan==1}">$135<span>MONTH</span></li>
+        										<li>3 hours of updates monthly</li>
+        										<li>Each Additional Hour $45</li>
+        										<li>2 business day turn around</li>
+        										<li>Free Backups (up to 30GB)</li>
+        										</ul>
+    										</div>
+    									</div>
+    									<div class="col-sm-4">
+    									    <div class="tableplan" ng-class="{'activetable': plan==2}" ng-click="switchplan(2)">
+        										<div class="tableheader">CUSTOM</div>
+        										<ul class="tableplanul">
+        										<li class="tablemoney" ng-class="{'activeli': plan==2}">$TBD<span>MONTH</span></li>
+        										<li>TBD hours of updates monthly</li>
+        										<li>Cost for Additional Hours TBD</li>
+        										<li>TBD business day turn around</li>
+        										<li>Free Backups (TBD)</li>
+        										</ul>
+    										</div>
+    									</div>
+                                </div>
+                                </form>
+							
+
+
+
+
+							</div><!-- Blog Detail -->
+						</div>
+
+						<aside class="col-md-4 sidebar" style="    background-color: #f3f3f3;">
+
+							<div class="title" style="padding-top:20px">
+								<h2>Submit your Quote</h2>
+								<p>Estimated Cost:${{1000+basicpages*200+formpages*400+custompages*800}}<br/>Estimated Monthly Cost:$60</p>
+							</div>
+							<div id="message"></div>
+							<form  class="contact" method="post" action="contact.php" name="contactform" id="contactform">
+								<div class="row">
+									<div class="col-md-12"><input  name="email" type="text" id="email"  placeholder="Email" /></div>
+									<div class="col-md-12"> <input type="text" placeholder="Subject" /> </div>
+									<div class="col-md-12"><textarea name="comments" id="comments"  placeholder="Details"></textarea></div>
+									<div class="col-md-12"><button class="btn" type="submit" id="submit">Submit</button></div>
+								</div>
+							</form>
+						</aside>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		
+		<footer>
+			<div class="container">
+				<p>Copyright © 2017  <a href="#" title="">Revive</a>. All rights reserved</p>
+				<div class="socials">
+					<a href="#" title=""><i class="fa fa-facebook"></i></a>
+					<a href="#" title=""><i class="fa fa-twitter"></i></a>
+					<a href="#" title=""><i class="fa fa-linkedin"></i></a>
+					<a href="#" title=""><i class="fa fa-google-plus"></i></a>
+				</div>
+			</div>
+		</footer><!-- Footer -->
+
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+	<script src="js/client.js"></script>
+ 	<script src="js/jquery.min.js"></script>
+ 	<script src="js/enscroll-0.5.2.min.js"></script>
+ 	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>
+
+
+
+
+

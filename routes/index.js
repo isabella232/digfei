@@ -14,5 +14,13 @@ router.get('/portfolio', function(req, res, next) {
 router.get('/contact', function(req, res, next) {
   res.render('contact');
 });
-
+router.get('/development', function(req, res, next) {
+  res.render('development');
+});
+router.get('/management', function(req, res, next) {
+  res.render('management');
+});
+router.get('/instantquote', function(req, res, next) {
+  res.render('quote');
+});
 module.exports = router;
