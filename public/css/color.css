@@ -1,0 +1,49 @@
+a:hover,
+a:focus,
+a:active,
+.featured-area h1 span,
+.option-set li a.selected,
+footer p a,
+.other-links a:hover,
+.btn,
+.zoomer,
+.readmore,
+.addbar-text > h4 span,
+.featured-text.style4 h1,
+.pagetop h1 span,
+.service i,
+.member > span,
+blockquote span,
+.tags > a:hover,
+.comment-text > span{
+	color:#78b8b4;
+}
+
+.btn:before,
+.title h2:before,
+.meta:before,
+.owl-dot.active,
+.portfolio-img.style4 .hover .hover-text .zoomer,
+.portfolio-img.style5 .hover,
+.progress-bar,
+.member-img:before,
+form .btn,
+.pagination li a.current,
+.tags > a:hover:before,
+.rep,
+.sidebar h4.widget-title:before,
+.theme-color, .theme-color:hover, .theme-color:focus{
+	background-color:#78b8b4;
+}
+
+
+.hover,
+.btn,
+.zoomer,
+.portfolio-img.style3 .hover .hover-text,
+.pagination li a.current,
+.tags > a:hover,
+nav ul ul{
+	border-color:#78b8b4;
+}
+
